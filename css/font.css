@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'Muli-ExtraBold';
+  src: url("../font/Muli-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: 'iciel-gotham-ultra';
+  src: url("../font/iciel-gotham-ultra.otf");
+}
+
+@font-face {
+  font-family: 'Muli-Bold';
+  src: url("../font/Muli-Bold.ttf");
+}
+
+@font-face {
+  font-family: 'Muli';
+  src: url("../font/Muli.ttf")
+}
+
+@font-face {
+  font-family: 'Muli-Regular';
+  src: url("../font/Muli-Regular.ttf")
+}
+
+@font-face {
+  font-family: 'Myriad-Pro-Regular';
+  src: url("../font/Myriad-Pro-Regular.ttf")
+}

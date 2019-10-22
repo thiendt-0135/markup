@@ -1,12 +1,616 @@
 <!DOCTYPE html>
-<html lang="vn">
+<html lang="vi">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>HTML5 & CSS3</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <p>HTML5 & CSS3</p>
+  <!-- header -->
+  <header class="header">
+    <div class="container">
+      <!-- logo -->
+      <h1 class="logo">
+        <a href="#"><img src="./images/logo.png" alt=""></a>
+      </h1>
+      <!-- end-logo -->
+      <!-- nav -->
+      <nav class="nav-header">
+        <ul class="nav">
+          <li class="nav-item"><a href="#">trang chủ</a></li>
+          <li class="nav-item"><a href="#">giới thiệu</a></li>
+          <li class="nav-item"><a href="#">sản phẩm</a>
+            <ul class="nav nav-chil">
+              <li class="nav-item"><a href="#">sản phẩm 1</a></li>
+              <li class="nav-item"><a href="#">sản phẩm 2</a>
+                <ul class="nav nav-chil nav-chil-right">
+                  <li class="nav-item"><a href="#">sản phẩm 2</a></li>
+                  <li class="nav-item"><a href="#">sản phẩm 2</a></li>
+                  <li class="nav-item"><a href="#">sản phẩm 2</a></li>
+                  <li class="nav-item"><a href="#">sản phẩm 2</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a href="#">sản phẩm 3</a>
+                <ul class="nav nav-chil nav-chil-right">
+                  <li class="nav-item"><a href="#">sản phẩm 3</a></li>
+                  <li class="nav-item"><a href="#">sản phẩm 3</a></li>
+                  <li class="nav-item"><a href="#">sản phẩm 3</a></li>
+                  <li class="nav-item"><a href="#">sản phẩm 3</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a href="#">sản phẩm 4</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="#">công nghệ</a></li>
+          <li class="nav-item"><a href="#">tuyển dụng</a></li>
+          <li class="nav-item"><a href="#">tin tức</a></li>
+          <li class="nav-item"><a href="#">liên hệ</a></li>
+        </ul>
+      </nav>
+      <!-- end-nav -->
+      <div class="search">
+        <form action="#" method="GET" class="form-search">
+          <input type="text" name="search" class="input_search js-input_search" placeholder="Search...">
+          <button type="button" class="btn-search js-btn-search">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </header>
+  <!-- end-header -->
+  <!-- banner -->
+  <section class="banner">
+    <div class="slide js-slide">
+      <div class="image-slide">
+        <img src="images/slide.png" alt="">
+        <div class="content-slide">
+          <h2 class="slide-title">Easy Fong Enterprise !!</h2>
+          <p class="slide-sub-title">Nhà phân phối quạt thông gió công nghiệp tại Việt Nam</p>
+          <p class="slide-des">Máy thổi khí tiết kiệm năng lượng dẫn đầu trong ngành thiết bị thông gió tiết kiệm ngân sách điện thổi bằng 40% mỗi năm...</p>
+        </div>
+      </div>
+      <div class="image-slide">
+        <img src="images/slide.png" alt="">
+        <div class="content-slide">
+          <h2 class="slide-title">Easy Fong Enterprise !!</h2>
+          <p class="slide-sub-title">Nhà phân phối quạt thông gió công nghiệp tại Việt Nam</p>
+          <p class="slide-des">Máy thổi khí tiết kiệm năng lượng dẫn đầu trong ngành thiết bị thông gió tiết kiệm ngân sách điện thổi bằng 40% mỗi năm...</p>
+        </div>
+      </div>
+      <div class="image-slide">
+        <img src="images/slide.png" alt="">
+        <div class="content-slide">
+          <h2 class="slide-title">Easy Fong Enterprise !!</h2>
+          <p class="text-title">Nhà phân phối quạt thông gió công nghiệp tại Việt Nam</p>
+          <p class="slide-des">Máy thổi khí tiết kiệm năng lượng dẫn đầu trong ngành thiết bị thông gió tiết kiệm ngân sách điện thổi bằng 40% mỗi năm...</p>
+        </div>
+      </div>
+    </div>
+    <div class="slide-controls">
+    </div>
+  </section>
+  <!-- end-banner -->
+  <!-- about-us -->
+  <section class="about-us">
+    <div class="about-us-left">
+      <h2 class="about-us-title">giới thiệu <span>easy fong</span></h2>
+    </div>
+    <div class="about-us-right">
+      <div class="line"><img src="images/line.png" alt=""></div>
+      <article class="about-us-content">
+        <h3>1999 Easy Fong tại Việt Nam được thành lập.</h3>
+        <p>Chúng tôi đã trở thành nhà lãnh đạo trong các quạt gió công nghiệp để có được nhà ở của người hâm mộ quạt thổi khí thải, bằng sáng chế cửa chớp cửa chớp giật bằng sáng chế, công nghệ bằng sáng chế nước làm mát không khí bằng sáng chế, cấu trúc gia cường của quạt công nghiệp cho động cơ bằng sáng chế, cấu trúc gia cường của quạt công nghiệp cho động cơ...</p>
+        <a href="#">Chi tiết <span><i class="fas fa-long-arrow-alt-right fa-lg"></i></span></a>
+      </article>
+    </div>
+  </section>
+  <!-- about-us -->
+  <!-- new-product -->
+  <section class="new-product">
+    <h2 class="title-new-product">sản phẩm mới</h2>
+    <div class="carousel-product js-item">
+      <div class="product-item">
+        <a href="#"><img src="images/item-1.png" alt=""></a>
+        <h4><a href="#">Evaporative Air Cooler</a></h4>
+      </div>
+      <div class="product-item">
+        <a href="#"><img src="images/item-2.png" alt=""></a>
+        <h4><a href="#">Evaporative Air Cooler</a></h4>
+      </div>
+      <div class="product-item">
+        <a href="#"><img src="images/item-3.png" alt=""></a>
+        <h4><a href="#">Evaporative Air Cooler</a></h4>
+      </div>
+      <div class="product-item">
+        <a href="#"><img src="images/item-4.png" alt=""></a>
+        <h4><a href="#">Evaporative Air Cooler</a></h4>
+      </div>
+      <div class="product-item">
+        <a href="#"><img src="images/item-1.png" alt=""></a>
+        <h4><a href="#">Evaporative Air Cooler</a></h4>
+      </div>
+      <div class="product-item">
+        <a href="#"><img src="images/item-2.png" alt=""></a>
+        <h4><a href="#">Evaporative Air Cooler</a></h4>
+      </div>
+      <div class="product-item">
+        <a href="#"><img src="images/item-3.png" alt=""></a>
+        <h4><a href="#">Evaporative Air Cooler</a></h4>
+      </div>
+      <div class="product-item">
+        <a href="#"><img src="images/item-4.png" alt=""></a>
+        <h4><a href="#">Evaporative Air Cooler</a></h4>
+      </div>
+    </div>
+  </section>
+  <!-- end-new-product -->
+  <!-- main-product -->
+  <section class="main-product">
+    <div class="main-product-header">
+      <h2 class="main-product-title">sản phẩm chính</h2>
+      <div class="nav-main-product js-nav-main-product">
+        <ul class="tab js-tab">
+          <li><a href="#tab-1">Tất cả</a></li>
+          <li><a href="#tab-2">Quạt công nghiệp</a></li>
+          <li><a href="#tab-3">Nắp nhựa khăn ướt</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-item js-main-item" id="tab-1">
+      <div class="main-item-row">
+        <div class="main-item-detail">
+          <a href="#"><img src="images/item-1.png" alt=""></a>
+          <a href="#">
+            <div class="detail-product">
+              <h4>Carbon Fiber Composite Series</h4>
+              <p>Hàng chính hãng mới 100%</p>
+              <p>Giá trên đã bao gồm 100% VAT</p>
+              <p>Xuất xứ: Trung Quốc</p>
+              <p>Loại: Quạt hướng trục trung áp</p>
+              <p>Bảo hành: 12 tháng chính hãng</p>
+              <p>Giao hàng toàn quốc. miễn phí nội thành TPHCM</p>
+            </div>
+          </a>
+        </div>
+        <div class="main-item-detail">
+          <a href="#"><img src="images/item-2.png" alt=""></a>
+          <a href="#">
+            <div class="detail-product">
+              <h4>Carbon Fiber Composite Series</h4>
+              <p>Hàng chính hãng mới 100%</p>
+              <p>Giá trên đã bao gồm 100% VAT</p>
+              <p>Xuất xứ: Trung Quốc</p>
+              <p>Loại: Quạt hướng trục trung áp</p>
+              <p>Bảo hành: 12 tháng chính hãng</p>
+              <p>Giao hàng toàn quốc. miễn phí nội thành TPHCM</p>
+            </div>
+          </a>
+        </div>
+        <div class="main-item-detail">
+          <a href="#"><img src="images/item-3.png" alt=""></a>
+          <a href="#">
+            <div class="detail-product">
+              <h4>Carbon Fiber Composite Series</h4>
+              <p>Hàng chính hãng mới 100%</p>
+              <p>Giá trên đã bao gồm 100% VAT</p>
+              <p>Xuất xứ: Trung Quốc</p>
+              <p>Loại: Quạt hướng trục trung áp</p>
+              <p>Bảo hành: 12 tháng chính hãng</p>
+              <p>Giao hàng toàn quốc. miễn phí nội thành TPHCM</p>
+            </div>
+          </a>
+        </div>
+        <div class="main-item-detail">
+          <a href="#"><img src="images/item-4.png" alt=""></a>
+          <a href="#">
+            <div class="detail-product">
+              <h4>Carbon Fiber Composite Series</h4>
+              <p>Hàng chính hãng mới 100%</p>
+              <p>Giá trên đã bao gồm 100% VAT</p>
+              <p>Xuất xứ: Trung Quốc</p>
+              <p>Loại: Quạt hướng trục trung áp</p>
+              <p>Bảo hành: 12 tháng chính hãng</p>
+              <p>Giao hàng toàn quốc. miễn phí nội thành TPHCM</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="main-item-row">
+        <div class="main-item-detail">
+          <a href="#"><img src="images/item-1.png" alt=""></a>
+          <a href="#">
+            <div class="detail-product">
+              <h4>Carbon Fiber Composite Series</h4>
+              <p>Hàng chính hãng mới 100%</p>
+              <p>Giá trên đã bao gồm 100% VAT</p>
+              <p>Xuất xứ: Trung Quốc</p>
+              <p>Loại: Quạt hướng trục trung áp</p>
+              <p>Bảo hành: 12 tháng chính hãng</p>
+              <p>Giao hàng toàn quốc. miễn phí nội thành TPHCM</p>
+            </div>
+          </a>
+        </div>
+        <div class="main-item-detail">
+          <a href="#"><img src="images/item-2.png" alt=""></a>
+          <a href="#">
+            <div class="detail-product">
+              <h4>Carbon Fiber Composite Series</h4>
+              <p>Hàng chính hãng mới 100%</p>
+              <p>Giá trên đã bao gồm 100% VAT</p>
+              <p>Xuất xứ: Trung Quốc</p>
+              <p>Loại: Quạt hướng trục trung áp</p>
+              <p>Bảo hành: 12 tháng chính hãng</p>
+              <p>Giao hàng toàn quốc. miễn phí nội thành TPHCM</p>
+            </div>
+          </a>
+        </div>
+        <div class="main-item-detail">
+          <a href="#"><img src="images/item-3.png" alt=""></a>
+          <a href="#">
+            <div class="detail-product">
+              <h4>Carbon Fiber Composite Series</h4>
+              <p>Hàng chính hãng mới 100%</p>
+              <p>Giá trên đã bao gồm 100% VAT</p>
+              <p>Xuất xứ: Trung Quốc</p>
+              <p>Loại: Quạt hướng trục trung áp</p>
+              <p>Bảo hành: 12 tháng chính hãng</p>
+              <p>Giao hàng toàn quốc. miễn phí nội thành TPHCM</p>
+            </div>
+          </a>
+        </div>
+        <div class="main-item-detail">
+          <a href="#"><img src="images/item-4.png" alt=""></a>
+          <a href="#">
+            <div class="detail-product">
+              <h4>Carbon Fiber Composite Series</h4>
+              <p>Hàng chính hãng mới 100%</p>
+              <p>Giá trên đã bao gồm 100% VAT</p>
+              <p>Xuất xứ: Trung Quốc</p>
+              <p>Loại: Quạt hướng trục trung áp</p>
+              <p>Bảo hành: 12 tháng chính hãng</p>
+              <p>Giao hàng toàn quốc. miễn phí nội thành TPHCM</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="main-item js-main-item" id="tab-2">
+      <div class="main-item-row">
+        <div class="main-item-detail">
+          <a href="#"><img src="images/item-4.png" alt=""></a>
+          <div class="detail-product">
+            <h4>Carbon Fiber Composite Series</h4>
+            <p>Hàng chính hãng mới 100%</p>
+            <p>Giá trên đã bao gồm 100% VAT</p>
+            <p>Xuất xứ: Trung Quốc</p>
+            <p>Loại: Quạt hướng trục trung áp</p>
+            <p>Bảo hành: 12 tháng chính hãng</p>
+            <p>Giao hàng toàn quốc. miễn phí nội thành TPHCM</p>
+          </div>
+        </div>
+        <div class="main-item-detail">
+          <a href="#"><img src="images/item-3.png" alt=""></a>
+          <div class="detail-product">
+            <h4>Carbon Fiber Composite Series</h4>
+            <p>Hàng chính hãng mới 100%</p>
+            <p>Giá trên đã bao gồm 100% VAT</p>
+            <p>Xuất xứ: Trung Quốc</p>
+            <p>Loại: Quạt hướng trục trung áp</p>
+            <p>Bảo hành: 12 tháng chính hãng</p>
+            <p>Giao hàng toàn quốc. miễn phí nội thành TPHCM</p>
+          </div>
+        </div>
+        <div class="main-item-detail">
+          <a href="#"><img src="images/item-2.png" alt=""></a>
+          <div class="detail-product">
+            <h4>Carbon Fiber Composite Series</h4>
+            <p>Hàng chính hãng mới 100%</p>
+            <p>Giá trên đã bao gồm 100% VAT</p>
+            <p>Xuất xứ: Trung Quốc</p>
+            <p>Loại: Quạt hướng trục trung áp</p>
+            <p>Bảo hành: 12 tháng chính hãng</p>
+            <p>Giao hàng toàn quốc. miễn phí nội thành TPHCM</p>
+          </div>
+        </div>
+        <div class="main-item-detail">
+          <a href="#"><img src="images/item-1.png" alt=""></a>
+          <div class="detail-product">
+            <h4>Carbon Fiber Composite Series</h4>
+            <p>Hàng chính hãng mới 100%</p>
+            <p>Giá trên đã bao gồm 100% VAT</p>
+            <p>Xuất xứ: Trung Quốc</p>
+            <p>Loại: Quạt hướng trục trung áp</p>
+            <p>Bảo hành: 12 tháng chính hãng</p>
+            <p>Giao hàng toàn quốc. miễn phí nội thành TPHCM</p>
+          </div>
+        </div>
+      </div>
+      <div class="main-item-row">
+        <div class="main-item-detail">
+          <a href="#"><img src="images/item-4.png" alt=""></a>
+          <div class="detail-product">
+            <h4>Carbon Fiber Composite Series</h4>
+            <p>Hàng chính hãng mới 100%</p>
+            <p>Giá trên đã bao gồm 100% VAT</p>
+            <p>Xuất xứ: Trung Quốc</p>
+            <p>Loại: Quạt hướng trục trung áp</p>
+            <p>Bảo hành: 12 tháng chính hãng</p>
+            <p>Giao hàng toàn quốc. miễn phí nội thành TPHCM</p>
+          </div>
+        </div>
+        <div class="main-item-detail">
+          <a href="#"><img src="images/item-3.png" alt=""></a>
+          <div class="detail-product">
+            <h4>Carbon Fiber Composite Series</h4>
+            <p>Hàng chính hãng mới 100%</p>
+            <p>Giá trên đã bao gồm 100% VAT</p>
+            <p>Xuất xứ: Trung Quốc</p>
+            <p>Loại: Quạt hướng trục trung áp</p>
+            <p>Bảo hành: 12 tháng chính hãng</p>
+            <p>Giao hàng toàn quốc. miễn phí nội thành TPHCM</p>
+          </div>
+        </div>
+        <div class="main-item-detail">
+          <a href="#"><img src="images/item-2.png" alt=""></a>
+          <div class="detail-product">
+            <h4>Carbon Fiber Composite Series</h4>
+            <p>Hàng chính hãng mới 100%</p>
+            <p>Giá trên đã bao gồm 100% VAT</p>
+            <p>Xuất xứ: Trung Quốc</p>
+            <p>Loại: Quạt hướng trục trung áp</p>
+            <p>Bảo hành: 12 tháng chính hãng</p>
+            <p>Giao hàng toàn quốc. miễn phí nội thành TPHCM</p>
+          </div>
+        </div>
+        <div class="main-item-detail">
+          <a href="#"><img src="images/item-1.png" alt=""></a>
+          <div class="detail-product">
+            <h4>Carbon Fiber Composite Series</h4>
+            <p>Hàng chính hãng mới 100%</p>
+            <p>Giá trên đã bao gồm 100% VAT</p>
+            <p>Xuất xứ: Trung Quốc</p>
+            <p>Loại: Quạt hướng trục trung áp</p>
+            <p>Bảo hành: 12 tháng chính hãng</p>
+            <p>Giao hàng toàn quốc. miễn phí nội thành TPHCM</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-item js-main-item" id="tab-3">
+      <div class="main-item-row">
+        <div class="main-item-detail">
+          <a href="#"><img src="images/item-3.png" alt=""></a>
+          <div class="detail-product">
+            <h4>Carbon Fiber Composite Series</h4>
+            <p>Hàng chính hãng mới 100%</p>
+            <p>Giá trên đã bao gồm 100% VAT</p>
+            <p>Xuất xứ: Trung Quốc</p>
+            <p>Loại: Quạt hướng trục trung áp</p>
+            <p>Bảo hành: 12 tháng chính hãng</p>
+            <p>Giao hàng toàn quốc. miễn phí nội thành TPHCM</p>
+          </div>
+        </div>
+        <div class="main-item-detail">
+          <a href="#"><img src="images/item-2.png" alt=""></a>
+          <div class="detail-product">
+            <h4>Carbon Fiber Composite Series</h4>
+            <p>Hàng chính hãng mới 100%</p>
+            <p>Giá trên đã bao gồm 100% VAT</p>
+            <p>Xuất xứ: Trung Quốc</p>
+            <p>Loại: Quạt hướng trục trung áp</p>
+            <p>Bảo hành: 12 tháng chính hãng</p>
+            <p>Giao hàng toàn quốc. miễn phí nội thành TPHCM</p>
+          </div>
+        </div>
+        <div class="main-item-detail">
+          <a href="#"><img src="images/item-1.png" alt=""></a>
+          <div class="detail-product">
+            <h4>Carbon Fiber Composite Series</h4>
+            <p>Hàng chính hãng mới 100%</p>
+            <p>Giá trên đã bao gồm 100% VAT</p>
+            <p>Xuất xứ: Trung Quốc</p>
+            <p>Loại: Quạt hướng trục trung áp</p>
+            <p>Bảo hành: 12 tháng chính hãng</p>
+            <p>Giao hàng toàn quốc. miễn phí nội thành TPHCM</p>
+          </div>
+        </div>
+        <div class="main-item-detail">
+          <a href="#"><img src="images/item-4.png" alt=""></a>
+          <div class="detail-product">
+            <h4>Carbon Fiber Composite Series</h4>
+            <p>Hàng chính hãng mới 100%</p>
+            <p>Giá trên đã bao gồm 100% VAT</p>
+            <p>Xuất xứ: Trung Quốc</p>
+            <p>Loại: Quạt hướng trục trung áp</p>
+            <p>Bảo hành: 12 tháng chính hãng</p>
+            <p>Giao hàng toàn quốc. miễn phí nội thành TPHCM</p>
+          </div>
+        </div>
+      </div>
+      <div class="main-item-row">
+        <div class="main-item-detail">
+          <a href="#"><img src="images/item-2.png" alt=""></a>
+          <div class="detail-product">
+            <h4>Carbon Fiber Composite Series</h4>
+            <p>Hàng chính hãng mới 100%</p>
+            <p>Giá trên đã bao gồm 100% VAT</p>
+            <p>Xuất xứ: Trung Quốc</p>
+            <p>Loại: Quạt hướng trục trung áp</p>
+            <p>Bảo hành: 12 tháng chính hãng</p>
+            <p>Giao hàng toàn quốc. miễn phí nội thành TPHCM</p>
+          </div>
+        </div>
+        <div class="main-item-detail">
+          <a href="#"><img src="images/item-4.png" alt=""></a>
+          <div class="detail-product">
+            <h4>Carbon Fiber Composite Series</h4>
+            <p>Hàng chính hãng mới 100%</p>
+            <p>Giá trên đã bao gồm 100% VAT</p>
+            <p>Xuất xứ: Trung Quốc</p>
+            <p>Loại: Quạt hướng trục trung áp</p>
+            <p>Bảo hành: 12 tháng chính hãng</p>
+            <p>Giao hàng toàn quốc. miễn phí nội thành TPHCM</p>
+          </div>
+        </div>
+        <div class="main-item-detail">
+          <a href="#"><img src="images/item-1.png" alt=""></a>
+          <div class="detail-product">
+            <h4>Carbon Fiber Composite Series</h4>
+            <p>Hàng chính hãng mới 100%</p>
+            <p>Giá trên đã bao gồm 100% VAT</p>
+            <p>Xuất xứ: Trung Quốc</p>
+            <p>Loại: Quạt hướng trục trung áp</p>
+            <p>Bảo hành: 12 tháng chính hãng</p>
+            <p>Giao hàng toàn quốc. miễn phí nội thành TPHCM</p>
+          </div>
+        </div>
+        <div class="main-item-detail">
+          <a href="#"><img src="images/item-3.png" alt=""></a>
+          <div class="detail-product">
+            <h4>Carbon Fiber Composite Series</h4>
+            <p>Hàng chính hãng mới 100%</p>
+            <p>Giá trên đã bao gồm 100% VAT</p>
+            <p>Xuất xứ: Trung Quốc</p>
+            <p>Loại: Quạt hướng trục trung áp</p>
+            <p>Bảo hành: 12 tháng chính hãng</p>
+            <p>Giao hàng toàn quốc. miễn phí nội thành TPHCM</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end-main-product -->
+  <!-- news-event -->
+  <section class="news">
+    <h2 class="news-title">tin tức & sự kiện</h2>
+    <div class="news-content">
+      <figure class="news-item">
+        <a href="#"><img src="images/image-content1.png" alt=""></a>
+        <figcaption>
+          <div class="news-item-title">
+            <div class="date">28 - T<span class="format-text">02</span></div>
+            <h4 class="text-title"><a href="#">Quy trình thực hiện của máy chiết rót dung dịch</a></h4>
+          </div>
+          <p class="text-content">Máy chiết rót dung dịch thường được áp dụng cho những trường hợp yêu cầu năng suất cao, hoặc các y/c nghiêm ngặt về vệ sinh thực phẩm.</p>
+        </figcaption>
+      </figure>
+      <figure class="news-item">
+        <a href="#"><img src="images/image-content2.png" alt=""></a>
+        <figcaption>
+          <div class="news-item-title">
+            <div class="date">28 - T<span class="format-text">04</span></div>
+            <h4 class="text-title"><a href="#">Quy trình thực hiện của máy chiết rót dung dịch</a></h4>
+          </div>
+          <p class="text-content">Máy chiết rót dung dịch thường được áp dụng cho những trường hợp yêu cầu năng suất cao, hoặc các y/c nghiêm ngặt về vệ sinh thực phẩm.</p>
+        </figcaption>
+      </figure>
+      <figure class="news-item">
+        <a href="#"><img src="images/image-content3.png" alt=""></a>
+        <figcaption>
+          <div class="news-item-title">
+            <div class="date">28 - T<span class="format-text">06</span></div>
+            <h4 class="text-title"><a href="#">Quy trình thực hiện của máy chiết rót dung dịch</a></h4>
+          </div>
+          <p class="text-content">Máy chiết rót dung dịch thường được áp dụng cho những trường hợp yêu cầu năng suất cao, hoặc các y/c nghiêm ngặt về vệ sinh thực phẩm.</p>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+  <!-- end-news-event -->
+  <!-- partner -->
+  <section class="partner">
+    <h2 class="partner-title">đối tác</h2>
+    <div class="list-item">
+      <ul class="nav">
+        <li class="nav-item">
+          <a href="#" class="nav-link"><img src="images/logo1.png" alt=""></a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link"><img src="images/logo2.png" alt=""></a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link"><img src="images/logo3.png" alt=""></a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link"><img src="images/logo4.png" alt=""></a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link"><img src="images/logo5.png" alt=""></a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link"><img src="images/logo6.png" alt=""></a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link"><img src="images/logo6.png" alt=""></a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link"><img src="images/logo5.png" alt=""></a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link"><img src="images/logo4.png" alt=""></a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link"><img src="images/logo3.png" alt=""></a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link"><img src="images/logo2.png" alt=""></a>
+        </li class="nav-item">
+        <li class="nav-item">
+          <a href="#" class="nav-link"><img src="images/logo1.png" alt=""></a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- end partner -->
+  <section class="map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12443.446549657112!2d106.64743473704962!3d10.777548004424576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175293555b87231%3A0x50f517e71462e7f8!2zMzczIEzDvSBUaMaw4budbmcgS2nhu4d0LCBQaMaw4budbmcgNywgVMOibiBCw6xuaCwgSOG7kyBDaMOtIE1pbmgsIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1571904430108!5m2!1sen!2s"
+      allowfullscreen=""></iframe>
+  </section>
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="information">
+        <a href="#"><img src="images/logo.png" alt=""></a>
+        <h2 class="information-title">công ty tnhh thương mại kiến minh</h2>
+        <p><i class="fas fa-map-marker-alt"></i> Trụ sở chính: 373/1/171J Lý Thường Kiệt, Phường 9, Quận Tân Bình </p>
+        <p><i class="fas fa-map-marker-alt"></i> Chi nhánh: 373/1/171J Lý Thường Kiệt, Phường 9, Quận Tân Bình</p>
+        <p><i class="fas fa-phone-square-alt"></i> 0913917087 - <i class="far fa-envelope"></i>huykienminh2003@yahoo.com - <i class="fas fa-globe-americas"></i>www.easyfong.com</p>
+      </div>
+      <div class="product">
+        <h3>sản phẩm</h3>
+        <p>Quạt công nghiệp</p>
+        <p>Nấp nhựa</p>
+      </div>
+      <div class="support">
+        <h3>hỗ trợ trực tuyến</h3>
+        <p>Mr. Duy: 0909 649 179</p>
+        <p>Mrs. Hoàng: 0167 36 46 </p>
+        <ul class="nav">
+          <li class="nav-item socia-facebook"><a href="#" class="nav-link"><i class="fab fa-facebook-f"></i></a></li>
+          <li class="nav-item socia-skype"><a href="#" class="nav-link"><i class="fab fa-skype"></i></a></li>
+          <li class="nav-item socia-google"><a href="#" class="nav-link"><i class="fab fa-google-plus-g"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-end">
+      <div class="container">
+        <div class="left">Copyright &copy; 2017 Easy Fong. All rights reserved.</div>
+        <div class="right">Thiết kế website: cnv.vn</div>
+      </div>
+    </div>
+  </footer>
+  <!-- end footer -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/master.js"></script>
 </body>
+
 </html>
