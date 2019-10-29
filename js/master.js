@@ -17,7 +17,13 @@ $('.js-slide').slick({
 
 // js-search
 $('.js-btn-search').click(function () {
-  $('.js-input_search').toggle();
+  if ($('input').hasClass('input_hidden')) {
+    $('.js-input_search').addClass('input-search');
+    $('.js-input_search').removeClass('input_hidden');
+  } else {
+    $('.js-input_search').addClass('input_hidden');
+    $('.js-input_search').removeClass('input-search');
+  }
   $(this).children().toggleClass('fa-times');
 });
 
@@ -27,7 +33,9 @@ $('.js-item').slick({
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 3000,
-  arrows: false,
+  arrows: true,
+  prevArrow: '.prev-arrow',
+  nextArrow: '.next-arrow'
 });
 // end-js-slide
 
