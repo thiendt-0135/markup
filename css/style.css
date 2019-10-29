@@ -153,16 +153,29 @@ body {
 }
 
 .slide .content-slide .slide-sub-title {
-  font-family: "Muli-Bold";
+  font-family: "cheat";
+  font-weight: bold;
   color: #375e00;
   font-size: 20px;
 }
 
 .slide .content-slide .slide-des {
-  font-family: "Muli-Regular";
+  font-family: "cheat";
   color: #929292;
-  font-size: 14px;
+  font-size: 17px;
   line-height: 26px;
+}
+
+.slide .content-slide h2::before {
+  content: " “ ";
+  position: absolute;
+  transform: translateX(-100%);
+}
+
+.slide .content-slide h2::after {
+  content: " ” ";
+  position: absolute;
+  transform: translateX(100%);
 }
 
 /* css-paginate-carousel */
@@ -274,23 +287,26 @@ body {
   border: 3px solid;
   border-radius: 100px;
   color: #268bdb;
+  font-size: 20px;
+  line-height: 27px;
   width: 150px;
   height: 50px;
   box-sizing: border-box;
-  padding-top: 14px;
+  padding-top: 10px;
   text-align: center;
   font-weight: 600;
-  transition: all 0.6s ease;
+  transition: all 0.3s ease;
+}
+
+.about-us-content .fas {
+  font-size: 20px;
+  margin-left: 5px;
 }
 
 .about-us-content a:hover {
   color: #ffffff;
   color: ffffff;
   background-color: #004eff;
-}
-
-.text .about-us-content a span {
-  margin-left: 2px;
 }
 
 /* end-css-about */
@@ -349,11 +365,21 @@ body {
 .slide-arrow {
   position: absolute;
   background-color: transparent;
-  color: white;
+  color: #ffffff;
   outline: none;
   border: none;
   top: 50%;
+  padding: 0;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.slide-arrow .fas{
+  font-size: 45px;
+}
+
+.slide-arrow:hover{
+  color: #b3b3b3;
 }
 
 .next-arrow {
@@ -532,11 +558,9 @@ body {
 }
 
 .news-item .text-title a {
-  font-family: "Muli-Bold";
   text-decoration: none;
   color: #051a2c;
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 20px;
   line-height: 26px;
 }
 
@@ -551,8 +575,9 @@ body {
 
 .news .news-content .text-content {
   color: #989898;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 28px;
+  font-family: "cheat";
 }
 
 .news-item-title {
@@ -561,7 +586,8 @@ body {
 }
 
 .news-item-title .text-title {
-  font-family: "Muli-bold";
+  font-family: "cheat";
+  font-size: 16px;
 }
 
 .content .text-content {
