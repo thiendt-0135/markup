@@ -716,6 +716,11 @@ body {
 .socia-facebook .nav-link {
   background: #0f568d;
   padding-left: 5px;
+  transition: all 0.5s ease;
+}
+
+.socia-facebook:hover .nav-link {
+  background: #51b3ff;
 }
 
 .socia-facebook:hover .nav-link {
@@ -725,6 +730,11 @@ body {
 .socia-skype .nav-link {
   background: #369ef7;
   padding-left: 3px;
+  transition: all 0.5s ease;
+}
+
+.socia-skype:hover .nav-link {
+  background: #70bdff;
 }
 
 .socia-skype:hover .nav-link {
@@ -733,6 +743,11 @@ body {
 
 .socia-google .nav-link {
   background: #e50f28;
+  transition: all 0.5s ease;
+}
+
+.socia-google:hover .nav-link {
+  background: #f76071;
 }
 
 .socia-google:hover .nav-link {
