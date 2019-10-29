@@ -42,7 +42,6 @@ body {
 
 .search .input_search {
   position: absolute;
-  display: none;
   top: 100%;
   outline: 0;
   z-index: 1;
@@ -52,6 +51,16 @@ body {
   border: 0;
   box-sizing: border-box;
   border-radius: 20px;
+}
+
+.input_hidden {
+  transform: scale(0);
+  transition: all 0.6s ease;
+}
+
+.input-search {
+  transform: scale(100%);
+  transition: all 0.6s ease;
 }
 
 .nav-header .nav {
@@ -78,6 +87,7 @@ body {
   background: transparent;
   outline: 0px;
   cursor: pointer;
+  width: 30px;
 }
 
 /* end-css-header */
@@ -175,6 +185,7 @@ body {
 
 .custom-dots li {
   display: flex;
+  cursor: pointer;
   border: 1px solid #ffffff;
   border-radius: 50%;
   padding: 4px;
@@ -269,6 +280,13 @@ body {
   padding-top: 14px;
   text-align: center;
   font-weight: 600;
+  transition: all 0.6s ease;
+}
+
+.about-us-content a:hover {
+  color: #ffffff;
+  color: ffffff;
+  background-color: #004eff;
 }
 
 .text .about-us-content a span {
@@ -280,6 +298,7 @@ body {
 /* css-new-product */
 
 .new-product {
+  position: relative;
   background-color: #041626;
   padding-bottom: 50px;
 }
@@ -327,6 +346,24 @@ body {
   color: #000000;
 }
 
+.slide-arrow {
+  position: absolute;
+  background-color: transparent;
+  color: white;
+  outline: none;
+  border: none;
+  top: 50%;
+  cursor: pointer;
+}
+
+.next-arrow {
+  right: 0%;
+}
+
+.prev-arrow {
+  left: 0%;
+}
+
 /* end-css-new-product */
 
 /* css-main-product */
@@ -370,6 +407,7 @@ body {
   text-decoration: none;
   color: #a09f9f;
   font-size: 14px;
+  transition: all 0.6s ease;
 }
 
 .tab a:hover {
@@ -398,6 +436,7 @@ body {
   margin-right: 30px;
   position: relative;
   overflow: hidden;
+  transition: box-shadow 0.6s ease;
 }
 
 .main-item-detail .detail-product {
@@ -409,7 +448,7 @@ body {
   top: 0px;
   height: 275px;
   width: 362.5px;
-  transition: all 0.8s ease;
+  transition: all 0.6s ease;
   transform: translateY(-100%);
   opacity: 0;
   line-height: 15px;
@@ -677,15 +716,30 @@ body {
 .socia-facebook .nav-link {
   background: #0f568d;
   padding-left: 5px;
+  transition: all 0.5s ease;
+}
+
+.socia-facebook:hover .nav-link {
+  background: #51b3ff;
 }
 
 .socia-skype .nav-link {
   background: #369ef7;
   padding-left: 3px;
+  transition: all 0.5s ease;
+}
+
+.socia-skype:hover .nav-link {
+  background: #70bdff;
 }
 
 .socia-google .nav-link {
   background: #e50f28;
+  transition: all 0.5s ease;
+}
+
+.socia-google:hover .nav-link {
+  background: #f76071;
 }
 
 .support i {
