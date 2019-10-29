@@ -27,3 +27,8 @@
   font-family: 'Myriad-Pro-Regular';
   src: url("../font/Myriad-Pro-Regular.ttf")
 }
+
+@font-face {
+  font-family: 'cheat';
+  src: url("../font/cheat.woff2")
+}
