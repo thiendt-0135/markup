@@ -83,9 +83,9 @@ body {
 
 .search .btn-search {
   color: #ffffff;
-  border: 0;
+  border: none;
   background: transparent;
-  outline: 0px;
+  outline: none;
   cursor: pointer;
   width: 30px;
 }
@@ -716,6 +716,7 @@ body {
 .socia-facebook .nav-link {
   background: #0f568d;
   padding-left: 5px;
+  transition: all 0.5s ease;
 }
 
 .socia-facebook:hover .nav-link {
@@ -725,6 +726,7 @@ body {
 .socia-skype .nav-link {
   background: #369ef7;
   padding-left: 3px;
+  transition: all 0.5s ease;
 }
 
 .socia-skype:hover .nav-link {
@@ -733,6 +735,7 @@ body {
 
 .socia-google .nav-link {
   background: #e50f28;
+  transition: all 0.5s ease;
 }
 
 .socia-google:hover .nav-link {
